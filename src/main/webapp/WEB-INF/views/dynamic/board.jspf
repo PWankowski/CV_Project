@@ -7,3 +7,6 @@
             - T. Harv Eker</p>
     </div>
 </footer><!-- End Footer -->
+
+<a href='<c:url value="#"/>' class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+<div id="preloader"></div>

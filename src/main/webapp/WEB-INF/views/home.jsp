@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<jsp:useBean id="now" class="java.util.Date"/>
+<%@ page contentType="text/html; charset=UTF-8" %>
+
+<%@include file="dynamic/css.jspf"%>
 
 
 
@@ -8,7 +12,7 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-
+  <%@include file="dynamic/navigationMain.jspf"%>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
@@ -26,22 +30,11 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Paweł Wańkowski</h3>
-      <p>"Programowanie prowadzi do myśli, myśli prowadzą do uczuć, uczucia prowadzą do działań, działania prowadzą do wyników."
-      - T. Harv Eker</p>
-         
-      
-     
-     
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
+  <%@include file="dynamic/board.jspf"%>
 
 
+
+  <%@include file="dynamic/javaScript.jspf"%>
 
 </body>
 
