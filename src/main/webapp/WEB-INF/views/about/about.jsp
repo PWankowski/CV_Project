@@ -138,11 +138,11 @@
               <span class="text">Dodaj nową umiejętnosc</span>
           </a>
 
-          <a href="#" class="btn btn-danger btn-icon-split">
+          <a href="#" class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
-            <span class="text">Usuń</span>
+            <span class="text">Edytuj</span>
         </a>
           </div>
 
