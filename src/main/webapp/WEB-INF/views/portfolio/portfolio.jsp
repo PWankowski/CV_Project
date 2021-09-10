@@ -2,14 +2,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="../css.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-  <%@include file="../navigationMain.jspf"%>
+  <%@include file="../dynamic/navigationMain.jspf"%>
 
  
 
@@ -35,13 +35,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src='<c:url value="/resources/img/portfolio/portfolio-1.jpg"/>' class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href='<c:url value="/resources/img/portfolio/portfolio-1.jpg"/>' data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href='<c:url value="#"/>' data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -84,12 +84,10 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <%@include file="../board.jspf"%>
+  <%@include file="../dynamic/board.jspf"%>
 
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
 
-  <%@include file="../javaScript.jspf"%>
+  <%@include file="../dynamic/javaScript.jspf"%>
 
 </body>
 

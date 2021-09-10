@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="../css.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 
 
 
@@ -13,7 +13,7 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-  <%@include file="../navigationMain.jspf"%>
+  <%@include file="../dynamic/navigationMain.jspf"%>
 
   <main id="main">
 
@@ -28,7 +28,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/IMG_0140b.jpg" class="img-fluid" alt="">
+            <img src='<c:url value="/resources/img/IMG_0140b.jpg"/>' class="img-fluid"  class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Inżynier Systemów Telekomunikacyjnych &amp; Junior Java Developer</h3>
@@ -154,13 +154,12 @@
   </main><!-- End #main -->
 
   <!--  Tu wstawic Board -->
-  <%@include file="../board.jspf"%>
+  <%@include file="../dynamic/board.jspf"%>
 
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
+
 
 <!--  Tu wstawic JS -->
-  <%@include file="../javaScript.jspf"%>
+  <%@include file="../dynamic/javaScript.jspf"%>
 
 </body>
 
