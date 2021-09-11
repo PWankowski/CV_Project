@@ -33,8 +33,8 @@ public class SkillService {
 
         Skill editSkill = skillRepository.findById(id).get();
 
-        editSkill.setName(editSkill.getName());
-        editSkill.setValue(editSkill.getValue());
+        editSkill.setName(skill.getName());
+        editSkill.setValue(skill.getValue());
 
         skillRepository.saveAndFlush(editSkill);
 

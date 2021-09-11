@@ -83,6 +83,8 @@
               </div>
             </div>
 
+
+
           </div>
 
          
@@ -92,7 +94,7 @@
       </div>
     </section><!-- End Skills Section -->
 
-    
+    <form name = "send" method="post" action='<c:url value="/addSkills"/>'>
 <!-- container-fluid -->
     <div class="container-fluid">
 
@@ -101,24 +103,24 @@
           <div class="col-xl-12 col-md-12 mb-12">
               <div class="card shadow mb-4">
                   <div class="card-header py-3">
-                     
-                     
-                     
-<div class="form-group row">
-<label for="skills" class="col-2 col-form-label">Podaj Nazwę </label>
-<div class="col-10">
-<textarea class="form-control" rows="1" id="start" placeholder="tutaj wpisz umiejętność..."></textarea>
-</div>
-</div>                     
-                     
-                     
-                     
-                      <div class="form-group row">
-                          <label for="skills" class="col-2 col-form-label">Na ile % znasz podaną umiejętność</label>
-                          <div class="col-10">
-                             <textarea class="form-control" rows="1" id="startSkill" placeholder="podaj znajomość umiejętności wpisując wartość w  %..."></textarea>
-                          </div>
-              </div>
+
+
+                    <div class="form-group row">
+                      <label for="skills" class="col-2 col-form-label">Podaj Nazwę </label>
+                      <div class="col-10">
+                        <textarea class="form-control" rows="1" id="start" name="name"
+                                  placeholder="tutaj wpisz umiejętność..."></textarea>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <label for="skills" class="col-2 col-form-label">Na ile % znasz podaną umiejętność</label>
+                      <div class="col-10">
+                        <textarea class="form-control" rows="1" id="startSkill" name="value"
+                                  placeholder="podaj znajomość umiejętności wpisując wartość wyrazoną w %..."></textarea>
+                      </div>
+                    </div>
 
 
                   </div>
@@ -134,8 +136,8 @@
 
 </div>
 <!-- /.container-fluid -->
-    
 
+    </form>
 
     
 

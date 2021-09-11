@@ -128,17 +128,25 @@
               </div>
             </div>
 
+            <c:forEach items="${skill}" var="title">
+            <div class="progress">
+              <span class="skill">${title.name} <i class="val">${title.value}</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow=${title.value} aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            </c:forEach>
           </div>
 
           <div class="buttons">
-            <a href="#" class="btn btn-success btn-icon-split">
+            <a href='<c:url value="/addSkills"/>' class="btn btn-success btn-icon-split">
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
               </span>
               <span class="text">Dodaj nową umiejętnosc</span>
           </a>
 
-          <a href="#" class="btn btn-primary">
+          <a href='<c:url value="/editSkills"/>' class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
