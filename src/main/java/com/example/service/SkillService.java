@@ -2,7 +2,6 @@ package com.example.service;
 
 import com.example.model.Skill;
 import com.example.repository.SkillRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,11 +20,15 @@ public class SkillService {
         return skillRepository.findAll();
     }
 
+    public Skill getOne(Long id){
+        return skillRepository.findById(id).orElse(null);
+    }
+
     public void addSkill(Skill newSkill){
         skillRepository.saveAndFlush(newSkill);
     }
 
-    public void deleteByID(Long id){
+    public void deleteSkill(Long id){
         skillRepository.deleteById(id);
     }
 
@@ -36,7 +39,7 @@ public class SkillService {
         editSkill.setName(skill.getName());
         editSkill.setValue(skill.getValue());
 
-        skillRepository.saveAndFlush(editSkill);
+        skillRepository.save(editSkill);
 
     }
 

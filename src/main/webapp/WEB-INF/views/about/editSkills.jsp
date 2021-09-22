@@ -33,30 +33,69 @@
       <!-- container-fluid -->
       <div class="container-fluid">
 
+
           <!-- Content Row -->
           <div class="row">
               <div class="col-xl-12 col-md-12 mb-12">
                   <div class="card shadow mb-4">
                       <div class="card-header py-3">
-
-
+                          <c:forEach items="${skill}" var="editedSkill">
+                              <form name="sendEditSkill" method="post" action='<c:url value="/editSkills/${editedSkill.id}"/>'>
                           <div class="form-group row">
-                              <label for="skills" class="col-2 col-form-label">Podaj Nazwę </label>
-                              <div class="col-10">
-                                <textarea class="form-control" rows="1" id="skill"
-                                          placeholder="tutaj wpisz umiejętność..."></textarea>
+
+                          <div class="col-3">
+                              <input class="form-control" type="text" name ="name" value=${editedSkill.name}>
+
+                          </div>
+
+                          <div class="col-2">
+                              <input class="form-control" type="text" name ="value" value=${editedSkill.value} >
+                          </div>
+
+                              <!-- Buttons -->
+                              <div class="col-1">
+                                  <input class="btn btn-success pull-left" type="submit" value="Zapisz Zmiany" id="searchButton">
+                              </div>
+
+
+                              <div class="col-1">
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Usuń </button>
+                              </div>
+                          </div>
+          </form>
+                          <div class="modal" id="myModal">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                          <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność ?</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+
+                                      <!-- Modal body -->
+                                      <div class="modal-body">
+                                          Jeżeli usuniesz to już nie będzie odwrotu
+                                      </div>
+
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
+                                          <form name="deleteSkill" method="post"
+                                                action='<c:url value="/deleteEditSkills/${editedSkill.id}"/>'>
+                                              <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
+                                          </form>
+                                      </div>
+
+                                  </div>
+
                               </div>
                           </div>
 
 
-                          <div class="form-group row">
-                              <label for="skills" class="col-2 col-form-label">Na ile % znasz podaną umiejętność</label>
-                              <div class="col-10">
-                                <textarea class="form-control" rows="1" id="value"
-                                          placeholder="podaj  wartość wyrażoną w  %..."></textarea>
-                              </div>
                           </div>
-
+                          </c:forEach>
+                  </div>
 
                       </div>
                   </div>
@@ -65,7 +104,7 @@
 
 
 
-          <input class="btn btn-success pull-left" type="submit" value="Zapisz Zmiany" id="searchButton"></input>
+
 
 
 
