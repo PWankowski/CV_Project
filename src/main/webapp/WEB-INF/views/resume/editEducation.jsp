@@ -25,59 +25,89 @@
           
         </div>
 
-       
-        
-          
-            <div class="form-group row">
 
-    <div class="col-lg-12">
-                              <textarea class="form-control" rows="3">Kierunek studiów oraz specjalizacja</textarea>
-                          </div>
 
-                          <div class="col-lg-12">
-                              <input class="form-control" type="text" value="Data rozpoczęcia oraz data ukończenia" >
-                          </div>
-                          
-                          <div class="col-lg-12">
-                              <input class="form-control" type="text" value="Nazwa uczelni" >
-                          </div>
+          <c:forEach items="${education}" var="editedEducation">
+          <form name="sendEditSkill" method="post" action='<c:url value="/editEducation/${editedEducation.id}"/>'>
 
-</div>
-         
-        
-        <div class="row">
-            <div class="col-lg-3">
-           
-           
-            <a href="#" class="btn btn-success btn-icon-split">
-              <span class="icon text-white-50">
-                  <i class="fas fa-check"></i>
-              </span>
-              <span class="text">Zapisz Zmiany</span>
-          </a>
-          
-          <a href="#" class="btn btn-danger btn-icon-split">
-            <span class="icon text-white-50">
-                <i class="fas fa-trash"></i>
-            </span>
-            <span class="text">Usuń</span>
-        </a>
-       
-            
+              <div class="form-group row">
+
+                  <div class="col-lg-12">
+                      <textarea class="form-control" rows="3" name="fieldOfStudy">${editedEducation.fieldOfStudy}</textarea>
+                  </div>
+
+
+                  <div class="col-lg-12">
+                      <input class="form-control" type="text" name="startAndEndOfStudy" value=${editedEducation.startAndEndOfStudy}>
+                  </div>
+
+
+                  <div class="col-lg-12">
+                      <input class="form-control" type="text" name="universityName" value=${editedEducation.universityName}>
+                  </div>
+
+
+              </div>
+
+              <!-- Buttons -->
+              <div class="form-group row">
+
+                  <div class="col-1">
+                      <input class="btn btn-success pull-left" type="submit" value="Zapisz"
+                             id="searchButton">
+                  </div>
+
+
+                  <div class="col-1">
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                          Usuń
+                      </button>
+                  </div>
+              </div>
+          </form>
+
+          <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                          <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność ?</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          Jeżeli usuniesz to już nie będzie odwrotu
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
+                          <form name="deleteSkill" method="post"
+                                action='<c:url value="#"/>'>
+                              <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
+                          </form>
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+
+        </c:forEach>
+
+
         </div>
-            
-        </div>
-
-      </div>
     </section><!-- End Resume Section -->
 
-    
+
   </main><!-- End #main -->
 
-   <!-- ======= Footer ======= -->
-  <%@include file="../dynamic/board.jspf"%>
+  <!-- ======= Footer ======= -->
+  <%@include file="../dynamic/board.jspf" %>
 
-  <%@include file="../dynamic/javaScript.jspf"%>
+  <%@include file="../dynamic/javaScript.jspf" %>
 
 
 </body>

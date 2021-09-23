@@ -27,6 +27,16 @@ public class EducationService {
         educationRepository.save(education);
     }
 
+    public void editEducation(Education inputEducation, Long id){
+        Education editedEducation = educationRepository.findById(id).get();
+
+        editedEducation.setFieldOfStudy(inputEducation.getFieldOfStudy());
+        editedEducation.setStartAndEndOfStudy(inputEducation.getStartAndEndOfStudy());
+        editedEducation.setUniversityName(inputEducation.getUniversityName());
+
+        educationRepository.save(editedEducation);
+    }
+
 
 
 }

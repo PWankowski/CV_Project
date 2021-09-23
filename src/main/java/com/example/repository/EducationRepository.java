@@ -11,7 +11,7 @@ import java.util.List;
 public interface EducationRepository extends JpaRepository<Education,Long> {
 
     List<Education> findAll();
-    Skill save(Skill skillEntity);
+    Education save(Education educationEntity);
 
 
 

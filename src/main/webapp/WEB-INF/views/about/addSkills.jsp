@@ -85,7 +85,7 @@
 
             <c:forEach items="${skill}" var="title">
               <div class="progress">
-                <span class="skill">${title.name} <i class="val">${title.value}</i></span>
+                <span class="skill">${title.name} <i class="val">${title.value}%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow=${title.value} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -115,9 +115,9 @@
 
 
                     <div class="form-group row">
-                      <label for="skills" class="col-3 col-form-label">Podaj Nazwę </label>
+                      <label for="skills" class="col-3 col-form-label">Podaj nazwę </label>
                       <div class="col-9">
-                        <textarea class="form-control" rows="1" id="start" name="name"
+                        <textarea class="form-control" rows="1" id="inputName" name="name"
                                   placeholder="tutaj wpisz umiejętność..."></textarea>
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="form-group row">
                       <label for="skills" class="col-3 col-form-label">Jak dobrze znasz podaną umiejętność</label>
                       <div class="col-9">
-                        <textarea class="form-control" rows="1" id="startSkill" name="value"
+                        <textarea class="form-control" rows="1" id="inputValue" name="value"
                                   placeholder="wartość wyraź w %..."></textarea>
                       </div>
                     </div>
