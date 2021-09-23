@@ -43,37 +43,43 @@
               <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy</em></p>
               
             </div>
+              <c:forEach items="${education}" var="edu">
+                  <div class="resume-item">
+                      <h4>${edu.fieldOfStudy}</h4>
+                      <h5>${edu.startAndEndOfStudy}</h5>
+                      <p><em>${edu.universityName}</em></p>
+
+                  </div>
+
+
+              </c:forEach>
+
           </div>
          
         </div>
-        
-         
-     
+
+
+          <form name = "send" method="post" action='<c:url value="/addNewEducation"/>'>
            <div class="form-group row">
 
-    <div class="col-lg-12">
-                              <textarea class="form-control" rows="3">Kierunek studiów oraz specjalizacja</textarea>
-                          </div>
+               <div class="col-lg-12">
+                   <textarea class="form-control" rows="3" name="fieldOfStudy" placeholder="Kierunek studiów oraz specjalizacja..."></textarea>
+               </div>
 
-                          <div class="col-lg-12">
-                              <input class="form-control" type="text" value="Data rozpoczęcia oraz data ukończenia" >
-                          </div>
-                          
-                          <div class="col-lg-12">
-                              <input class="form-control" type="text" value="Nazwa uczelni" >
-                          </div>
+               <div class="col-lg-12">
+                   <input class="form-control" type="text" name="startAndEndOfStudy" placeholder="Data rozpoczęcia oraz data ukończenia...">
+               </div>
+
+               <div class="col-lg-12">
+                   <input class="form-control" type="text" name="universityName" placeholder="Nazwa uczelni...">
+               </div>
 
 </div>
-       
-        <div class="row">
-            <div class="col-lg">
-            <a href="#" class="btn btn-success btn-icon-split">
-              <span class="icon text-white-50">
-                  <i class="fas fa-check"></i>
-              </span>
-              <span class="text">Wyślij</span>
-          </a>
-          
+
+
+          <input class="btn btn-success pull-left" type="submit" value="Wyślij" id="searchButton"></input>
+
+          </form>
          
         
             

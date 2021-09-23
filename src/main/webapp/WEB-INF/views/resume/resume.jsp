@@ -43,6 +43,16 @@
               <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy</em></p>
               
             </div>
+
+            <c:forEach items="${education}" var="edu">
+              <div class="resume-item">
+                <h4>${edu.fieldOfStudy}</h4>
+                <h5>${edu.startAndEndOfStudy}</h5>
+                <p><em>${edu.universityName}</em></p>
+
+              </div>
+
+            </c:forEach>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">DOŚWIADCZENIE ZAWODOWE</h3>
