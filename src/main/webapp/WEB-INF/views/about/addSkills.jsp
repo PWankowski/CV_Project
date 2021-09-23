@@ -16,7 +16,7 @@
 
   <main id="main">
 
-    Section -->
+
      <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
@@ -83,6 +83,15 @@
               </div>
             </div>
 
+            <c:forEach items="${skill}" var="title">
+              <div class="progress">
+                <span class="skill">${title.name} <i class="val">${title.value}</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow=${title.value} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </c:forEach>
+
 
 
           </div>
@@ -106,8 +115,8 @@
 
 
                     <div class="form-group row">
-                      <label for="skills" class="col-2 col-form-label">Podaj Nazwę </label>
-                      <div class="col-10">
+                      <label for="skills" class="col-3 col-form-label">Podaj Nazwę </label>
+                      <div class="col-9">
                         <textarea class="form-control" rows="1" id="start" name="name"
                                   placeholder="tutaj wpisz umiejętność..."></textarea>
                       </div>
@@ -115,10 +124,10 @@
 
 
                     <div class="form-group row">
-                      <label for="skills" class="col-2 col-form-label">Na ile % znasz podaną umiejętność</label>
-                      <div class="col-10">
+                      <label for="skills" class="col-3 col-form-label">Jak dobrze znasz podaną umiejętność</label>
+                      <div class="col-9">
                         <textarea class="form-control" rows="1" id="startSkill" name="value"
-                                  placeholder="podaj znajomość umiejętności wpisując wartość wyrazoną w %..."></textarea>
+                                  placeholder="wartość wyraź w %..."></textarea>
                       </div>
                     </div>
 

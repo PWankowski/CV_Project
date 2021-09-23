@@ -130,7 +130,7 @@
 
             <c:forEach items="${skill}" var="title">
             <div class="progress">
-              <span class="skill">${title.name} <i class="val">${title.value}</i></span>
+              <span class="skill">${title.name} <i class="val">${title.value}%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow=${title.value} aria-valuemin="0" aria-valuemax="100"></div>
               </div>
