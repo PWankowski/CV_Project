@@ -20,10 +20,6 @@ public class SkillService {
         return skillRepository.findAll();
     }
 
-    public Skill getOne(Long id){
-        return skillRepository.findById(id).orElse(null);
-    }
-
     public void addSkill(Skill newSkill){
         skillRepository.saveAndFlush(newSkill);
     }

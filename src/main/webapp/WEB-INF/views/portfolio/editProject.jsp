@@ -33,17 +33,18 @@
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
 
-
+                                <c:forEach items="${project}" var="editedProject">
+                                    <form name="sendEditProject" method="post" action='<c:url value="/editProject/${editedProject.id}"/>'>
                                 <div class="form-group row">
 
                                     <div class="col-5">
-                                        <input class="form-control" type="text" value="Nazwa projektu">
+                                        <input class="form-control" type="text" name="projectName" value="${editedProject.projectName}">
 
                                     </div>
 
 
                                     <div class="col-5">
-                                        <input class="form-control" type="text" value="link do githuba">
+                                        <input class="form-control" type="text" name="gitHub" value="${editedProject.gitHub}">
                                     </div>
 
                                     <div class="col-1">
@@ -54,12 +55,13 @@
 
                                     <div class="col-1">
                                         <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#myModal"> Usuń
+                                                data-target="#modalButtonForProduct${editedProject.id}"> Usuń
                                         </button>
 
                                     </div>
 
-                                    <div class="modal" id="myModal">
+
+                                    <div class="modal" id="modalButtonForProduct${editedProject.id}">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
 
@@ -81,8 +83,8 @@
                                                     <button type="button" class="btn btn-primary" data-dismiss="modal">
                                                         Anuluj
                                                     </button>
-                                                    <form name="deleteSkill" method="post"
-                                                          action="#">
+                                                    <form name="deleteProject" method="post"
+                                                          action='<c:url value="/deleteProject/${editedProject.id}"/>'>
                                                         <input type="submit" class="btn btn-danger pull-left"
                                                                value="Tak"/>
                                                     </form>
@@ -95,6 +97,10 @@
 
 
                                 </div>
+                                    </form>
+                                </c:forEach>
+
+
                             </div>
                         </div>
                     </div>

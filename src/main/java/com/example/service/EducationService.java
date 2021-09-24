@@ -19,9 +19,7 @@ public class EducationService {
         return educationRepository.findAll();
     }
 
-    public Education getOne(Long id){
-        return  educationRepository.findById(id).orElse(null);
-    }
+
 
     public void saveNewEducation(Education education){
         educationRepository.save(education);

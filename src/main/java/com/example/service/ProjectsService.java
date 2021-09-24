@@ -23,6 +23,20 @@ public class ProjectsService {
         projectsRepository.save(inputProject);
     }
 
+    public void editProject(Projects project, Long id){
+
+        Projects editedProject = projectsRepository.findById(id).get();
+
+        editedProject.setProjectName(project.getProjectName());
+        editedProject.setGitHub(project.getGitHub());
+
+        projectsRepository.save(editedProject);
+    }
+
+    public void deleteProject(Long id){
+        projectsRepository.deleteById(id);
+    }
+
 
 
 }
