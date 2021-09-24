@@ -1,0 +1,17 @@
+package com.example.repository;
+
+import com.example.model.Portfolio;
+import com.example.model.Skill;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+import java.util.List;
+
+@Repository
+public interface PortfolioRepository extends JpaRepository<Portfolio, Long> {
+
+    List<Portfolio> findAll();
+    Portfolio save(Portfolio skillEntity);
+
+}
