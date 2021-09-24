@@ -40,8 +40,8 @@ public class SkillService {
         editSkill.setValue(skill.getValue());
 
         skillRepository.save(editSkill);
-
     }
+
 
 
 }

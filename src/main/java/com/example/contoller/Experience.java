@@ -55,6 +55,12 @@ public class Experience {
         return  new RedirectView("/experience");
     }
 
+    @RequestMapping(value = "/deleteEducation/{id}", method = RequestMethod.POST)
+    public RedirectView deleteEducation(@PathVariable("id") Long id){
+        educationService.deleteEducation(id);
+        return new RedirectView("/experience");
+    }
+
 
 
 

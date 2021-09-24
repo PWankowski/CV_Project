@@ -30,15 +30,19 @@
           <c:forEach items="${education}" var="editedEducation">
           <form name="sendEditSkill" method="post" action='<c:url value="/editEducation/${editedEducation.id}"/>'>
 
-              <div class="form-group row">
+              <div class="form-group row" >
 
-                  <div class="col-lg-12">
-                      <textarea class="form-control" rows="3" name="fieldOfStudy">${editedEducation.fieldOfStudy}</textarea>
+                  <div class="col-lg-12" >
+
+                      <textarea class="form-control" rows="2"  name="fieldOfStudy">${editedEducation.fieldOfStudy}</textarea>
+
                   </div>
 
 
-                  <div class="col-lg-12">
+                  <div class="col-lg-12" >
+                      <div>
                       <input class="form-control" type="text" name="startAndEndOfStudy" value=${editedEducation.startAndEndOfStudy}>
+                      </div>
                   </div>
 
 
@@ -59,44 +63,44 @@
 
 
                   <div class="col-1">
-                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalButton${editedEducation.id}">
                           Usuń
                       </button>
                   </div>
               </div>
           </form>
 
-          <div class="modal" id="myModal">
-              <div class="modal-dialog">
-                  <div class="modal-content">
+              <!-- The Modal -->
+              <div class="modal" id="modalButton${editedEducation.id}">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
 
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                          <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność ?</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                              <h4 class="modal-title">Czy na pewno chcesz usunąć obiekt ?</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
 
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                          Jeżeli usuniesz to już nie będzie odwrotu
-                      </div>
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              Jeżeli usuniesz to już nie będzie odwrotu
+                          </div>
 
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
-                          <form name="deleteSkill" method="post"
-                                action='<c:url value="#"/>'>
-                              <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
-                          </form>
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
+                              <form name="deleteEducation" method="post"
+                                    action='<c:url value="/deleteEducation/${editedEducation.id}"/>'>
+                                  <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
+                              </form>
+                          </div>
+
                       </div>
 
                   </div>
-
               </div>
-          </div>
 
         </c:forEach>
-
 
         </div>
     </section><!-- End Resume Section -->

@@ -37,6 +37,10 @@ public class EducationService {
         educationRepository.save(editedEducation);
     }
 
+    public void deleteEducation(Long id){
+        educationRepository.deleteById(id);
+    }
+
 
 
 }

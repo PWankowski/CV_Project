@@ -57,12 +57,14 @@
                                   <input class="btn btn-success pull-left" type="submit" value="Zapisz Zmiany" id="searchButton">
                               </div>
 
-
                               <div class="col-1">
-                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal${editedSkill.id}"> Usuń </button>
+                                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal${editedSkill.id}"> Usuń </button>
                               </div>
+
                           </div>
-          </form>
+
+                              </form>
+
                           <div class="modal" id="myModal${editedSkill.id}">
                               <div class="modal-dialog">
                                   <div class="modal-content">
