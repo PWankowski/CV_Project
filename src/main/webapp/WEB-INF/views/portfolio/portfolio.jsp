@@ -35,13 +35,23 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src='<c:url value="/resources/img/portfolio/portfolio-1.jpg"/>' class="img-fluid" alt="">
+              <img src='<c:url value="/resources/img/portfolio/photo-hotel.jpg"/>' class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Hotel_Service Project</h4>
                 <div class="portfolio-links">
-                  <a href='<c:url value="/resources/img/portfolio/portfolio-1.jpg"/>' data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href='<c:url value="#"/>' data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href='<c:url value="https://github.com/PWankowski/Hotel_Service"/>'  data-vbtype="iframe"  title="githubLink"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src='<c:url value="/resources/img/portfolio/cv.jpeg"/>' class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>CV Project</h4>
+                <div class="portfolio-links">
+                  <a href='<c:url value="https://github.com/PWankowski/CV_Project"/>'  data-vbtype="iframe"  title="githubLink"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
