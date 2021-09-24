@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 public class Experience {
 
-    private EducationService educationService;
+    private final EducationService educationService;
 
     public Experience(EducationService educationService) {
         this.educationService = educationService;

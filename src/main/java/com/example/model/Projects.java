@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Portfolio {
+public class Projects {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,10 +15,10 @@ public class Portfolio {
     private String projectName;
     private String gitHub;
 
-    public Portfolio() {
+    public Projects() {
     }
 
-    public Portfolio(Long id, String projectName, String gitHub) {
+    public Projects(Long id, String projectName, String gitHub) {
         this.id = id;
         this.projectName = projectName;
         this.gitHub = gitHub;

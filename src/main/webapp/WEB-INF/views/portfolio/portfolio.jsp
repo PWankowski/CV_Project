@@ -57,8 +57,22 @@
             </div>
           </div>
 
-          
-         
+
+          <c:forEach items="${project}" var="myProject">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src='<c:url value="/resources/img/portfolio/new-project.jpg"/>' class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>${myProject.projectName}</h4>
+                  <div class="portfolio-links">
+                    <a href='<c:url value="${myProject.gitHub}"/>' data-vbtype="iframe"
+                       title="githubLink"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </c:forEach>
 
 
 
