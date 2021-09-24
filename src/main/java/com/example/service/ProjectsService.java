@@ -19,6 +19,10 @@ public class ProjectsService {
         return projectsRepository.findAll();
     }
 
+    public void addProject(Projects inputProject){
+        projectsRepository.save(inputProject);
+    }
+
 
 
 }

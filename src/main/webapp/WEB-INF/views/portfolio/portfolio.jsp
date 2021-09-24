@@ -79,19 +79,19 @@
         </div>
         
         <div class="Buttons">
-            <a href="#" class="btn btn-success btn-icon-split">
+            <a href='<c:url value="/addNewProject"/>' class="btn btn-success btn-icon-split">
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
               </span>
               <span class="text">Dodaj Projekt</span>
           </a>
-          
-          <a href="#" class="btn btn-danger btn-icon-split">
+
+          <a href='<c:url value="/editProject"/>' class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
-            <span class="text">Usuń</span>
-        </a>
+            <span class="text">Edytuj</span>
+          </a>
         </div>
         
         

@@ -98,7 +98,7 @@
     
   </main><!-- End #main -->
 
-   <!-- ======= Footer ======= -->
+
 
 
   <%@include file="../dynamic/board.jspf"%>
