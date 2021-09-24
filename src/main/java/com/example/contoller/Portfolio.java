@@ -37,7 +37,7 @@ public class Portfolio {
 
 
 
-    @RequestMapping(value = "/addProject", method = RequestMethod.POST)
+    @RequestMapping(value = "/addNewProject", method = RequestMethod.POST)
     public RedirectView postAddProject(@ModelAttribute Projects project){
         projectsService.addProject(project);
         return new RedirectView("/portfolio");

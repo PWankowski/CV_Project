@@ -31,7 +31,7 @@
           <p>Zrealizowane Projekty</p>
         </div>
 
-
+          <form name = "send" method="post" action='<c:url value="/addNewProject"/>'>
           <div class="row">
               <div class="col-xl-12 col-md-12 mb-12">
                   <div class="card shadow mb-4">
@@ -41,7 +41,7 @@
                           <div class="form-group row">
                               <label for="portfolio" class="col-2 col-form-label">Nazwa Projektu </label>
                               <div class="col-10">
-                                  <textarea class="form-control" rows="1" id="projectName"
+                                  <textarea class="form-control" rows="1" id="projectName" name="projectName"
                                             placeholder="tutaj wpisz nazwę projektu..."></textarea>
                               </div>
                           </div>
@@ -50,7 +50,7 @@
                           <div class="form-group row">
                               <label for="portfolio" class="col-2 col-form-label">Link do GitHuba</label>
                               <div class="col-10">
-                                  <textarea class="form-control" rows="1" id="gitHubLink"
+                                  <textarea class="form-control" rows="1" id="gitHubLink" name="gitHub"
                                             placeholder="wklej link do githuba..."></textarea>
                               </div>
                           </div>
@@ -62,6 +62,7 @@
           </div>
 
           <input class="btn btn-success pull-left" type="submit" value="Wyślij" id="searchButton">
+      </form>
           
        
       
