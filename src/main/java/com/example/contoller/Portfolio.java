@@ -31,6 +31,7 @@ public class Portfolio {
     public String getAddNewProject(){
         return "portfolio/addNewProject";
     }
+    
     @RequestMapping(value = "/editProject", method = RequestMethod.GET)
     public String getEditProject(Model model){
         List<Projects> projectsList = projectsService.getAll();

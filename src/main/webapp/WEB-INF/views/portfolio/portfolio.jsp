@@ -78,7 +78,7 @@
 
         </div>
         
-        <div class="Buttons">
+
             <a href='<c:url value="/addNewProject"/>' class="btn btn-success btn-icon-split">
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
@@ -92,7 +92,7 @@
             </span>
             <span class="text">Edytuj</span>
           </a>
-        </div>
+
         
         
 

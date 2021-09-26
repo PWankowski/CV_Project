@@ -436,7 +436,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -537,6 +537,8 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+
+
 
 .portfolio #portfolio-flters {
   padding: 0;

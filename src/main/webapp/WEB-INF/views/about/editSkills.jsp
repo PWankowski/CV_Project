@@ -54,7 +54,7 @@
 
                               <!-- Buttons -->
                               <div class="col-1">
-                                  <input class="btn btn-success pull-left" type="submit" value="Zapisz " id="searchButton">
+                                  <input class="btn btn-success pull-left" type="submit" value="Zapisz Zmiany" id="searchButton">
                               </div>
 
 
@@ -67,7 +67,7 @@
                               </form>
 
 
-                          <div class="modal" id="myModal${editedSkill.id}">
+                          <div class="modal" id="myModal${editedSkill.id}" data-backdrop="false">
                               <div class="modal-dialog">
                                   <div class="modal-content">
 

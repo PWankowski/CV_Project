@@ -71,7 +71,7 @@
           </form>
 
               <!-- The Modal -->
-              <div class="modal" id="modalButton${editedEducation.id}">
+              <div class="modal" id="modalButton${editedEducation.id}" data-backdrop="false">
                   <div class="modal-dialog">
                       <div class="modal-content">
 

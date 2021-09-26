@@ -34,7 +34,8 @@
                             <div class="card-header py-3">
 
                                 <c:forEach items="${project}" var="editedProject">
-                                    <form name="sendEditProject" method="post" action='<c:url value="/editProject/${editedProject.id}"/>'>
+                                <form name="sendEditProject" method="post" action='<c:url value="/editProject/${editedProject.id}"/>'>
+
                                 <div class="form-group row">
 
                                     <div class="col-5">
@@ -55,49 +56,47 @@
 
                                     <div class="col-1">
                                         <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#modalButtonForProduct${editedProject.id}"> Usuń
+                                                data-target="#modalButtonForProject${editedProject.id}"> Usuń
                                         </button>
 
                                     </div>
 
+                                </div>
+                                </form>
+                            <div class="modal" id="modalButtonForProject${editedProject.id}" data-backdrop="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
 
-                                    <div class="modal" id="modalButtonForProduct${editedProject.id}">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-
-                                                <!-- Modal Header -->
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność
-                                                        ?</h4>
-                                                    <button type="button" class="close" data-dismiss="modal">&times;
-                                                    </button>
-                                                </div>
-
-                                                <!-- Modal body -->
-                                                <div class="modal-body">
-                                                    Jeżeli usuniesz to już nie będzie odwrotu
-                                                </div>
-
-                                                <!-- Modal footer -->
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                        Anuluj
-                                                    </button>
-                                                    <form name="deleteProject" method="post"
-                                                          action='<c:url value="/deleteProject/${editedProject.id}"/>'>
-                                                        <input type="submit" class="btn btn-danger pull-left"
-                                                               value="Tak"/>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność
+                                                ?</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;
+                                            </button>
                                         </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            Jeżeli usuniesz to już nie będzie odwrotu
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                                Anuluj
+                                            </button>
+                                            <form name="deleteProject" method="post"
+                                                  action='<c:url value="/deleteProject/${editedProject.id}"/>'>
+                                                <input type="submit" class="btn btn-danger pull-left"
+                                                       value="Tak"/>
+                                            </form>
+                                        </div>
+
                                     </div>
 
-
                                 </div>
-                                    </form>
+                            </div>
+
                                 </c:forEach>
 
 
