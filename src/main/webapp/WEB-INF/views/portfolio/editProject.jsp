@@ -34,68 +34,72 @@
                             <div class="card-header py-3">
 
                                 <c:forEach items="${project}" var="editedProject">
-                                <form name="sendEditProject" method="post" action='<c:url value="/editProject/${editedProject.id}"/>'>
+                                    <form name="sendEditProject" method="post"
+                                          action='<c:url value="/editProject/${editedProject.id}"/>'>
 
-                                <div class="form-group row">
+                                        <div class="form-group row">
 
-                                    <div class="col-5">
-                                        <input class="form-control" type="text" name="projectName" value="${editedProject.projectName}">
+                                            <div class="col-5">
+                                                <input class="form-control" type="text" name="projectName"
+                                                       value="${editedProject.projectName}">
 
-                                    </div>
-
-
-                                    <div class="col-5">
-                                        <input class="form-control" type="text" name="gitHub" value="${editedProject.gitHub}">
-                                    </div>
-
-                                    <div class="col-1">
-                                        <input class="btn btn-success pull-left" type="submit" value="Zapisz "
-                                               id="searchButton">
-                                    </div>
+                                            </div>
 
 
-                                    <div class="col-1">
-                                        <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#modalButtonForProject${editedProject.id}"> Usuń
-                                        </button>
+                                            <div class="col-5">
+                                                <input class="form-control" type="text" name="gitHub"
+                                                       value="${editedProject.gitHub}">
+                                            </div>
 
-                                    </div>
+                                            <div class="col-1">
+                                                <input class="btn btn-success pull-left" type="submit" value="Zapisz "
+                                                       id="searchButton">
+                                            </div>
 
-                                </div>
-                                </form>
-                            <div class="modal" id="modalButtonForProject${editedProject.id}" data-backdrop="false">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
 
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność
-                                                ?</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;
-                                            </button>
+                                            <div class="col-1">
+                                                <button type="button" class="btn btn-danger" data-toggle="modal"
+                                                        data-target="#modalButtonForProject${editedProject.id}"> Usuń
+                                                </button>
+
+                                            </div>
+
                                         </div>
+                                    </form>
+                                    <div class="modal" id="modalButtonForProject${editedProject.id}"
+                                         data-backdrop="false">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
 
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            Jeżeli usuniesz to już nie będzie odwrotu
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność
+                                                        ?</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;
+                                                    </button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    Jeżeli usuniesz to już nie będzie odwrotu
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                                        Anuluj
+                                                    </button>
+                                                    <form name="deleteProject" method="post"
+                                                          action='<c:url value="/deleteProject/${editedProject.id}"/>'>
+                                                        <input type="submit" class="btn btn-danger pull-left"
+                                                               value="Tak"/>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
                                         </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                Anuluj
-                                            </button>
-                                            <form name="deleteProject" method="post"
-                                                  action='<c:url value="/deleteProject/${editedProject.id}"/>'>
-                                                <input type="submit" class="btn btn-danger pull-left"
-                                                       value="Tak"/>
-                                            </form>
-                                        </div>
-
                                     </div>
-
-                                </div>
-                            </div>
 
                                 </c:forEach>
 
@@ -108,19 +112,13 @@
         </div>
     </section><!-- End Portfolio Section -->
 
-   
 
-    
+</main><!-- End #main -->
 
-    
+<!-- ======= Footer ======= -->
+<%@include file="../dynamic/board.jspf" %>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <%@include file="../dynamic/board.jspf"%>
-
-  <%@include file="../dynamic/javaScript.jspf"%>
-
+<%@include file="../dynamic/javaScript.jspf" %>
 
 
 </body>

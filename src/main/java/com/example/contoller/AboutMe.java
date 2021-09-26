@@ -54,7 +54,7 @@ public class AboutMe {
     @RequestMapping(value = "/deleteEditSkills/{id}", method = RequestMethod.POST)
     public RedirectView deleteSkill(@PathVariable("id") Long id){
         skillService.deleteSkill(id);
-        return new RedirectView("/editSkills");
+        return new RedirectView("/about");
     }
 
 

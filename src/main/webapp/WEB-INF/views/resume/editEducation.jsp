@@ -30,24 +30,26 @@
           <c:forEach items="${education}" var="editedEducation">
           <form name="sendEditSkill" method="post" action='<c:url value="/editEducation/${editedEducation.id}"/>'>
 
-              <div class="form-group row" >
+              <div class="form-group" >
 
+                  <div class="form-group row">
                   <div class="col-lg-12" >
-
                       <textarea class="form-control" rows="2"  name="fieldOfStudy">${editedEducation.fieldOfStudy}</textarea>
-
+                  </div>
                   </div>
 
-
+                  <div class="form-group row">
                   <div class="col-lg-12" >
                       <div>
                       <input class="form-control" type="text" name="startAndEndOfStudy" value=${editedEducation.startAndEndOfStudy}>
                       </div>
                   </div>
+                  </div>
 
-
+                  <div class="form-group row">
                   <div class="col-lg-12">
                       <input class="form-control" type="text" name="universityName" value=${editedEducation.universityName}>
+                  </div>
                   </div>
 
 
