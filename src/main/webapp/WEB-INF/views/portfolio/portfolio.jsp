@@ -63,7 +63,7 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src='<c:url value="/resources/img/portfolio/new-project.jpg"/>' class="img-fluid"
+                            <img src='<c:url value="/resources/img/portfolio/new_Project.jpg"/>' class="img-fluid"
                                  alt="">
                             <div class="portfolio-info">
                                 <h4>${myProject.projectName}</h4>

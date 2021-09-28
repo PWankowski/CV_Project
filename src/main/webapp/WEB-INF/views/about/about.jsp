@@ -38,11 +38,11 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="icofont-rounded-right"></i> <strong>Data urodzenia:</strong> 2 October
+                                <li><i class="icofont-rounded-right"></i> <strong>Data urodzenia:</strong> 2 Października
                                     1989
                                 </li>
                                 <li><i class="icofont-rounded-right"></i> <strong>Telefon:</strong> 792 021 089</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Miasto:</strong> Bydgoszcz, Poland
+                                <li><i class="icofont-rounded-right"></i> <strong>Miasto:</strong> Bydgoszcz, Polska
                                 </li>
                             </ul>
                         </div>

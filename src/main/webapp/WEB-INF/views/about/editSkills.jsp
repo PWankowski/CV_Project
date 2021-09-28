@@ -54,7 +54,7 @@
 
                                     <!-- Buttons -->
                                     <div class="col-1">
-                                        <input class="btn btn-success pull-left" type="submit" value="Zapisz Zmiany"
+                                        <input class="btn btn-success pull-left" type="submit" value="Zapisz "
                                                id="searchButton">
                                     </div>
 

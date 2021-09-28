@@ -18,7 +18,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Paweł Wańkowski</h1>
-      <p>I'm <span class="typed" data-typed-items="Junior Java Developer"></span></p>
+      <p><span class="typed" data-typed-items="Junior Java Developer"></span></p>
      
     </div>
   </section><!-- End Hero -->
