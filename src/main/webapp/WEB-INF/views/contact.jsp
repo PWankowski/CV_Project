@@ -23,7 +23,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Kontakt</h2>
+          <h2>Contact</h2>
         </div>
 
         <div class="row mt-1">
@@ -32,7 +32,7 @@
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
-                <h4>Lokalizacja:</h4>
+                <h4>Localization:</h4>
                 <p>Bydgoszcz</p>
               </div>
 
@@ -44,7 +44,7 @@
 
               <div class="phone">
                 <i class="icofont-phone"></i>
-                <h4>Telefon:</h4>
+                <h4>Phone:</h4>
                 <p>792 021 089</p>
               </div>
 

@@ -21,7 +21,7 @@
 
             <div class="section-title">
                 <h2>Portfolio</h2>
-                <p>Zrealizowane Projekty</p>
+                <p>Projects</p>
             </div>
 
             <div class="row">
@@ -58,6 +58,19 @@
                     </div>
                 </div>
 
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src='<c:url value="/resources/img/portfolio/pokemon.jpg"/>' class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Pokemon Api</h4>
+                            <div class="portfolio-links">
+                                <a href='<c:url value="https://github.com/PWankowski/PokemonApiV1"/>' data-vbtype="iframe"
+                                   title="githubLink"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <c:forEach items="${project}" var="myProject">
 
@@ -84,14 +97,14 @@
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
               </span>
-                <span class="text">Dodaj Projekt</span>
+                <span class="text">Add project</span>
             </a>
 
             <a href='<c:url value="/editProject"/>' class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
-                <span class="text">Edytuj</span>
+                <span class="text">Edit</span>
             </a>
 
 

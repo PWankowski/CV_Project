@@ -21,7 +21,7 @@
 
             <div class="section-title">
                 <h2>Portfolio</h2>
-                <p>Zrealizowane Projekty</p>
+                <p>Projects</p>
             </div>
 
 
@@ -52,14 +52,14 @@
                                             </div>
 
                                             <div class="col-1">
-                                                <input class="btn btn-success pull-left" type="submit" value="Zapisz "
+                                                <input class="btn btn-success pull-left" type="submit" value="Save "
                                                        id="searchButton">
                                             </div>
 
 
                                             <div class="col-1">
                                                 <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                        data-target="#modalButtonForProject${editedProject.id}"> Usuń
+                                                        data-target="#modalButtonForProject${editedProject.id}"> Delete
                                                 </button>
 
                                             </div>
@@ -73,7 +73,7 @@
 
                                                 <!-- Modal Header -->
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność
+                                                    <h4 class="modal-title">Do you want to remove this project?
                                                         ?</h4>
                                                     <button type="button" class="close" data-dismiss="modal">&times;
                                                     </button>
@@ -81,18 +81,18 @@
 
                                                 <!-- Modal body -->
                                                 <div class="modal-body">
-                                                    Jeżeli usuniesz to już nie będzie odwrotu
+                                                    If you delete there will be no going back
                                                 </div>
 
                                                 <!-- Modal footer -->
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                                        Anuluj
+                                                        Cancel
                                                     </button>
                                                     <form name="deleteProject" method="post"
                                                           action='<c:url value="/deleteProject/${editedProject.id}"/>'>
                                                         <input type="submit" class="btn btn-danger pull-left"
-                                                               value="Tak"/>
+                                                               value="Yes"/>
                                                     </form>
                                                 </div>
 

@@ -21,7 +21,7 @@
 
             <div class="section-title">
                 <h2>Portfolio</h2>
-                <p>Zrealizowane Projekty</p>
+                <p>Projects</p>
             </div>
 
             <form name="send" method="post" action='<c:url value="/addNewProject"/>'>
@@ -32,19 +32,19 @@
 
 
                                 <div class="form-group row">
-                                    <label for="portfolio" class="col-2 col-form-label">Nazwa Projektu </label>
+                                    <label for="portfolio" class="col-2 col-form-label">Project Name </label>
                                     <div class="col-10">
                                   <textarea class="form-control" rows="1" id="projectName" name="projectName"
-                                            placeholder="tutaj wpisz nazwę projektu..."></textarea>
+                                            placeholder="project name ... "></textarea>
                                     </div>
                                 </div>
 
 
                                 <div class="form-group row">
-                                    <label for="portfolio" class="col-2 col-form-label">Link do GitHuba</label>
+                                    <label for="portfolio" class="col-2 col-form-label">Link to Github</label>
                                     <div class="col-10">
                                   <textarea class="form-control" rows="1" id="gitHubLink" name="gitHub"
-                                            placeholder="wklej link do githuba..."></textarea>
+                                            placeholder="paste link to github..."></textarea>
                                     </div>
                                 </div>
 
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <input class="btn btn-success pull-left" type="submit" value="Wyślij" id="searchButton">
+                <input class="btn btn-success pull-left" type="submit" value="Send" id="searchButton">
             </form>
 
 

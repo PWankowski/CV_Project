@@ -19,38 +19,36 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>O mnie </h2>
-                <p>Od zawsze interesowałem sie nowymi technologiami i chciałbym zostać częscia tego świata nie tylko z
-                    perspektywy użytkownika, ale również poznać ten świat z perspektywy developera.</p>
+                <h2>About me </h2>
+                <p>I have always been intrested in new technologies and I wanted to be a part of this word not only from the user's side but
+                    also the developer</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4">
-                    <img src='<c:url value="/resources/img/IMG_0140b.jpg"/>' class="img-fluid" class="img-fluid" alt="">
+                    <img src='<c:url value="/resources/img/IMG_0140b.jpg"/>' class="img-fluid"  alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>Inżynier Systemów Telekomunikacyjnych</h3>
+                    <h3>Engineer of Telecommunication Systems</h3>
                     <p class="font-italic">
-                        Od ponad 5 lat pracuję jako Inżynier Systemów Telekomunikacyjnych w Sp. Z o.o. Łączpol dla Nokia
-                        w Bydgoszczy, oraz od roku uczestniczę w kursie Software Development Academy programowania w
-                        Javie.
+                        Since 5 Years I have been working as Engineer of Telecommunication Systems in Sp. Z o.o. Łączpol for Nokia Bydgoszcz .
+                        Also for 1 Year I was a trainee on Programing course from Java in Software Development Academy which i finished in October.
                     </p>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="icofont-rounded-right"></i> <strong>Data urodzenia:</strong> 2 Października
+                                <li><i class="icofont-rounded-right"></i> <strong>Date of birth:</strong> 2 October
                                     1989
                                 </li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Telefon:</strong> 792 021 089</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Miasto:</strong> Bydgoszcz, Polska
+                                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 792 021 089</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Bydgoszcz, Poland
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="icofont-rounded-right"></i> <strong>Wiek:</strong> 32</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Wykształcenie:</strong> Magister
-                                    Inżynier
+                                <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 32</li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Education:</strong> Master of Science
                                 </li>
                                 <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> pawel.wankowski@wp.pl
                                 </li>
@@ -58,12 +56,11 @@
                         </div>
                     </div>
                     <p>
-                        Programowanie sprawia mi ogromną przyjemnośc i radość z tworzenia. Zawsze czułem sie mocny w
-                        rozwiazywaniu problemów technicznych.
-                        Jestem osoba ambitną, gotową na nowe wyzwania, chętnie współpracującą w grupie, życzliwą z
-                        pozytywnym nastawieniem do pracy.
-                        Według mnie branża programistyczna daje ogromne mozliwosci rozwoju z których chciałbym
-                        skorzystać bedąc otwartym na nową wiedze i zdobywanie nowych umiejętności.
+                        Programming gives me a great pleasure and fun from creating. I always felt strong with
+                        solving technical problems.
+                        I'm ambitious person, prepared for new challenges,friendly, gladly cooperating in group, with positive outlook on work.
+                        In my opinion programming branch is giving great opportunity to development, which I would like to use
+                        being open for new knowledge and by improving my skills in programming.
                     </p>
                 </div>
             </div>
@@ -76,7 +73,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Umiejętności</h2>
+                <h2>Skills</h2>
                 <p></p>
             </div>
 
@@ -160,14 +157,14 @@
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
               </span>
-                        <span class="text">Dodaj nową umiejętnosc</span>
+                        <span class="text">Add new Skill</span>
                     </a>
 
                     <a href='<c:url value="/editSkills"/>' class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
-                        <span class="text">Edytuj</span>
+                        <span class="text">Edit</span>
                     </a>
                 </div>
 

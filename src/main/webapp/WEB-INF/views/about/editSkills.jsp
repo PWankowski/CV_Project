@@ -20,7 +20,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Umiejętności</h2>
+                <h2>Skills</h2>
                 <p></p>
             </div>
 
@@ -54,14 +54,14 @@
 
                                     <!-- Buttons -->
                                     <div class="col-1">
-                                        <input class="btn btn-success pull-left" type="submit" value="Zapisz "
+                                        <input class="btn btn-success pull-left" type="submit" value="Save "
                                                id="searchButton">
                                     </div>
 
 
                                     <div class="col-1">
                                         <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                data-target="#myModal${editedSkill.id}"> Usuń
+                                                data-target="#myModal${editedSkill.id}"> Delete
                                         </button>
                                     </div>
 
@@ -76,22 +76,22 @@
 
                                         <!-- Modal Header -->
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Czy na pewno chcesz usunąć umiejętność ?</h4>
+                                            <h4 class="modal-title">Do you want to remove this skill?</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            Jeżeli usuniesz to już nie będzie odwrotu
+                                            If you delete there will be no going back
                                         </div>
 
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel
                                             </button>
                                             <form name="deleteSkill" method="post"
                                                   action='<c:url value="/deleteEditSkills/${editedSkill.id}"/>'>
-                                                <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
+                                                <input type="submit" class="btn btn-danger pull-left" value="Yes"/>
                                             </form>
                                         </div>
 

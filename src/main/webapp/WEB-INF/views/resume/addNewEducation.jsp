@@ -20,7 +20,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Edukacja</h2>
+                <h2>Education</h2>
 
             </div>
 
@@ -30,17 +30,15 @@
 
 
                     <div class="resume-item">
-                        <h4>Mechanika i Budowa Maszyn specjalizacja Procesy, Maszyny i Systemy Produkcyjne, studia
-                            magisterskie</h4>
+                        <h4>Mechanics and Structure of machines specialization : Processes, Machines and Production Systems, master's degree</h4>
                         <h5>2012 - 2014</h5>
-                        <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy </em></p>
+                        <p><em>University of Technology and Sciences  in Bydgoszcz</em></p>
 
                     </div>
                     <div class="resume-item">
-                        <h4>Zarządzanie Inżynierią Produkcji, specjalizacja Zarządzanie Procesami Produkcyjnymi, studia
-                            inżynierskie</h4>
+                        <h4>Managing Production Engineering, specialization in Manufacturing Process Management, engineering studies</h4>
                         <h5>2008 - 2012</h5>
-                        <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy</em></p>
+                        <p><em>University of Technology and Sciences  in Bydgoszcz</em></p>
 
                     </div>
                     <c:forEach items="${education}" var="edu">
@@ -65,27 +63,27 @@
                         <div class="form-group row">
                     <div class="col-lg-12">
                         <textarea class="form-control" rows="3" name="fieldOfStudy"
-                                  placeholder="Kierunek studiów oraz specjalizacja..."></textarea>
+                                  placeholder="Field of study and  specialization..."></textarea>
                     </div>
                         </div>
 
                     <div class="form-group row" >
                     <div class="col-lg-12">
                         <input class="form-control" type="text" name="startAndEndOfStudy"
-                               placeholder="Data rozpoczęcia oraz data ukończenia...">
+                               placeholder="Start date and end date ...">
                     </div>
                     </div>
 
                     <div class="form-group row" >
                     <div class="col-lg-12">
-                        <input class="form-control" type="text" name="universityName" placeholder="Nazwa uczelni...">
+                        <input class="form-control" type="text" name="universityName" placeholder="Name of the University...">
                     </div>
                     </div>
 
                 </div>
 
 
-                <input class="btn btn-success pull-left" type="submit" value="Wyślij" id="searchButton"></input>
+                <input class="btn btn-success pull-left" type="submit" value="Send" id="searchButton">
 
             </form>
 

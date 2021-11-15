@@ -21,7 +21,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Edukacja i Doświadczenie Zawodowe</h2>
+                <h2>Education  and Experience</h2>
 
             </div>
 
@@ -29,19 +29,17 @@
                 <div class="col-lg-6">
 
 
-                    <h3 class="resume-title">Edukacja</h3>
+                    <h3 class="resume-title">Education</h3>
                     <div class="resume-item">
-                        <h4>Mechanika i Budowa Maszyn specjalizacja Procesy, Maszyny i Systemy Produkcyjne, studia
-                            magisterskie</h4>
+                        <h4>Mechanics and Structure of machines specialization : Processes, Machines and Production Systems, master's degree</h4>
                         <h5>2012 - 2014</h5>
-                        <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy </em></p>
+                        <p><em>University of Technology and Sciences  in Bydgoszcz </em></p>
 
                     </div>
                     <div class="resume-item">
-                        <h4>Zarządzanie Inżynierią Produkcji, specjalizacja Zarządzanie Procesami Produkcyjnymi, studia
-                            inżynierskie</h4>
+                        <h4>Managing Production Engineering, specialization in Manufacturing Process Management, engineering studies</h4>
                         <h5>2008 - 2012</h5>
-                        <p><em>Uniwersytet Technologiczno-Przyrodniczy w Bydgoszczy</em></p>
+                        <p><em>University of Technology and Sciences  in Bydgoszcz</em></p>
 
                     </div>
 
@@ -56,76 +54,59 @@
                     </c:forEach>
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="resume-title">DOŚWIADCZENIE ZAWODOWE</h3>
+                    <h3 class="resume-title">Experience</h3>
                     <div class="resume-item">
                         <h4>Trainee</h4>
-                        <h5>09/2020 - Obecnie</h5>
+                        <h5>09/2020 - 10/2021</h5>
                         <p><em>Software Development Academy </em></p>
                         <ul>
-                            <li>Kurs nauki programowania w Javie, kurs stacjonarny z przejściem na nauczanie zdalnie od
-                                kwietnia 2021.
+                            <li>
+                                Programming course from Java Language, full-time course changed for remote from April 2021.
                             </li>
 
                         </ul>
                     </div>
                     <div class="resume-item">
-                        <h4>Inżynier Systemów Telekomunikacyjnych</h4>
-                        <h5>07/2016-Obecnie</h5>
-                        <p><em>Łączpol Sp. Z o.o. w Nokia Bydgoszcz</em></p>
+                        <h4>Engineer of Telecommunication Systems</h4>
+                        <h5>07/2016-Nowadays</h5>
+                        <p><em>Łączpol Sp. Z o.o. in Nokia Bydgoszcz</em></p>
                         <ul>
-                            <li>Opracowywanie dokumentacji technicznych, wykonawczych oraz powykonawczych lokalizacji i
-                                obiektów dla mobilnych sieci 2G, 3G, 4G oraz 5G
-                            </li>
-                            <li>Wdrażanie rozwiązań systemowych klienta oraz współużytkowników obiektu,</li>
-                            <li>Opracowywanie schematów połączeń antenowych i elektrycznych na potrzeby tworzonej
-                                dokumentacji,
-                            </li>
-                            <li>Aktualizowanie pod kątem technicznym i technologicznym opracowywanych obiektów w
-                                programie AutoCad,
-                            </li>
-                            <li>Wykonywanie rysunków wykonawczych konstrukcji stalowych,</li>
-                            <li>Sprawdzanie prac pod kątem zgodności z wytycznymi, bazując na pozyskanych danych z wizji
-                                lokalnych oraz wytycznych od klienta
-                            </li>
+                            <li>Preparation of technical documentation, executive and as-built on sites with network 2G, 3G, 4G and 5G,</li>
+                            <li>Implementation of system solutions of the client and co-users on sites,</li>
+                            <li>Preparation of cables connection schema and electro connection schema,</li>
+                            <li>Technical and technological update for prepared documentations in AutoCad,</li>
+                            <li>Preparation of  steel construction drawings according to statics files for masts etc.,</li>
+                            <li>Documentation checking according to clients requirements , based on the data obtained from site surveys</li>
+                            <li>Contact with others Nokia facilities in Europe,  explaining issues related to projects, discuss about solutions on sites,</li>
                         </ul>
                     </div>
 
                     <div class="resume-item">
-                        <h4>Technolog</h4>
+                        <h4>Technologist </h4>
                         <h5>03/2016 – 07/2016</h5>
                         <p><em>Maxbelt Sp. Z o.o. Bydgoszcz</em></p>
                         <ul>
-                            <li>Przygotowywanie marszrut technologicznych,</li>
-                            <li>Nadzór nad zleceniami w toku,</li>
-                            <li>Wykonywanie rysunków pasowych kół zębatych w programie Autocad</li>
-                            <li>Przygotowywanie ofert kół pasowych pod zapytania klientów w oparciu o pracochłonność dla
-                                danych typów kół,
-                            </li>
-                            <li>Kontakt telefoniczny oraz prowadzenie korespondencji z klientami z Polski i zagranicy
-                                (uzgadnianie szczegółów technicznych, terminów wykonania oraz poziomu cen),
-                            </li>
-                            <li>Praca z systemem ERP</li>
+                            <li>Preparation of technological work plans,</li>
+                            <li>Supervision of orders in progress,</li>
+                            <li>Preparation of geared pulley  drawings in Autocad </li>
+                            <li>Preparation of offers for geared pulley for clients,</li>
+                            <li>Work with ERP System,</li>
+                            <li>Maintaining an appropriate level of steel inventory</li>
                         </ul>
                     </div>
 
                     <div class="resume-item">
-                        <h4>Technolog</h4>
+                        <h4>Technologist</h4>
                         <h5>11/2014 – 03/2016</h5>
                         <p><em>STAL-BUD s.c Bydgoszcz </em></p>
                         <ul>
-                            <li>Utrzymywanie kontaktu z biurami projektowymi oraz kierownikami budowy,</li>
-                            <li>Wdrażanie rozwiązań systemowych klienta oraz współużytkowników obiektu,</li>
-                            <li>Przygotowywanie list materiałowych i list z rozkrojami materiałów,</li>
-                            <li>Zakupy materiałów hutniczych, negocjacje cen materiałów hutniczych z dostawcami,</li>
-                            <li>Opracowywanie dokumentacji technicznej konstrukcji stalowych,</li>
-                            <li>Wykonywanie rysunków 2D w programie Inventor/AutoCad,</li>
-                            <li>Przeprowadzanie doraźnych badań wizualnych złączy spawanych; nadzór nad wykonywanymi
-                                pracami na warsztacie;
-                            </li>
-                            <li>Opracowywanie harmonogramu prac w oparciu o uzgodnienia z zleceniodawcą oraz
-                                harmonogramu prac warsztatowych i rozdzielanie zadań pracownikom produkcyjnym,
-                            </li>
-                            <li>Praca z systemem ERP</li>
+                            <li>Maintaining contact with planning project offices and with construction managers,</li>
+                            <li>Preparation of technological steel constructions documentation,</li>
+                            <li>Preparation 2D drawings in Inventor/AutoCad,</li>
+                            <li>Supervision of  technological processes of steel processing,</li>
+                            <li>Performing visual inspection of welding,</li>
+                            <li>Supervision of the work performed at the workshop,</li>
+                            <li>Preparation of work schedule based on guidelines from the client,</li>
                         </ul>
                     </div>
                 </div>
@@ -138,14 +119,14 @@
               <span class="icon text-white-50">
                   <i class="fas fa-check"></i>
               </span>
-                        <span class="text">Dodaj Edukacje</span>
+                        <span class="text">Add Education</span>
                     </a>
 
                     <a href='<c:url value="/editEducation"/>' class="btn btn-primary">
             <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
-                        <span class="text">Edytuj</span>
+                        <span class="text">Edit</span>
                     </a>
 
 

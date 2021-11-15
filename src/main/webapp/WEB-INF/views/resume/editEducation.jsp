@@ -21,7 +21,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Edukacja</h2>
+          <h2>Education</h2>
           
         </div>
 
@@ -59,14 +59,14 @@
               <div class="form-group row">
 
                   <div class="col-1">
-                      <input class="btn btn-success pull-left" type="submit" value="Zapisz"
+                      <input class="btn btn-success pull-left" type="submit" value="Save"
                              id="searchButton">
                   </div>
 
 
                   <div class="col-1">
                       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalButton${editedEducation.id}">
-                          Usuń
+                          Delete
                       </button>
                   </div>
               </div>
@@ -79,21 +79,21 @@
 
                           <!-- Modal Header -->
                           <div class="modal-header">
-                              <h4 class="modal-title">Czy na pewno chcesz usunąć obiekt ?</h4>
+                              <h4 class="modal-title">Do you want to remove this object?</h4>
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
                           </div>
 
                           <!-- Modal body -->
                           <div class="modal-body">
-                              Jeżeli usuniesz to już nie będzie odwrotu
+                              If you delete there will be no going back
                           </div>
 
                           <!-- Modal footer -->
                           <div class="modal-footer">
-                              <button type="button" class="btn btn-primary" data-dismiss="modal">Anuluj</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
                               <form name="deleteEducation" method="post"
                                     action='<c:url value="/deleteEducation/${editedEducation.id}"/>'>
-                                  <input type="submit" class="btn btn-danger pull-left" value="Tak"/>
+                                  <input type="submit" class="btn btn-danger pull-left" value="Yes"/>
                               </form>
                           </div>
 
