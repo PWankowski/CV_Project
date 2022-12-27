@@ -56,6 +56,19 @@
                 <div class="col-lg-6">
                     <h3 class="resume-title">Experience</h3>
                     <div class="resume-item">
+                        <h4>Junior Java Developer</h4>
+                        <h5>06/2022– Nowadays</h5>
+                        <p><em>Oponeo.pl in Bydgoszcz</em></p>
+                        <ul>
+                            <li>Service and developing ERP system to buisness managment in Java language,</li>
+                            <li>Spring,</li>
+                            <li>Hibernate,</li>
+                            <li>Groovy,</li>
+                            <li>SOAP API,</li>
+                            <li>PostgreSQL,</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
                         <h4>Trainee</h4>
                         <h5>09/2020 - 10/2021</h5>
                         <p><em>Software Development Academy </em></p>
@@ -76,8 +89,8 @@
                             <li>Preparation of cables connection schema and electro connection schema,</li>
                             <li>Technical and technological update for prepared documentations in AutoCad,</li>
                             <li>Preparation of  steel construction drawings according to statics files for masts etc.,</li>
-                            <li>Documentation checking according to clients requirements , based on the data obtained from site surveys</li>
-                            <li>Contact with others Nokia facilities in Europe,  explaining issues related to projects, discuss about solutions on sites,</li>
+                            <li>Documentation checking according to clients requirements , based on the data obtained from site surveys,</li>
+                            <li>Contact with others Nokia facilities in Europe,  explaining issues related to projects, discuss about solutions on sites.</li>
                         </ul>
                     </div>
 
@@ -88,10 +101,10 @@
                         <ul>
                             <li>Preparation of technological work plans,</li>
                             <li>Supervision of orders in progress,</li>
-                            <li>Preparation of geared pulley  drawings in Autocad </li>
+                            <li>Preparation of geared pulley  drawings in Autocad, </li>
                             <li>Preparation of offers for geared pulley for clients,</li>
                             <li>Work with ERP System,</li>
-                            <li>Maintaining an appropriate level of steel inventory</li>
+                            <li>Maintaining an appropriate level of steel inventory.</li>
                         </ul>
                     </div>
 
@@ -106,7 +119,7 @@
                             <li>Supervision of  technological processes of steel processing,</li>
                             <li>Performing visual inspection of welding,</li>
                             <li>Supervision of the work performed at the workshop,</li>
-                            <li>Preparation of work schedule based on guidelines from the client,</li>
+                            <li>Preparation of work schedule based on guidelines from the client.</li>
                         </ul>
                     </div>
                 </div>
